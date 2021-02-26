@@ -1,21 +1,17 @@
 name: .NET
 
 on:
-  push:
-    branches: [ master ]
-  pull_request:
-    branches: [ master ]
-
-env:
- PROJECT_PATH: 'CSharpFancyExtensions/CSharpFancyExtensions.csproj'
- PACKAGE_OUTPUT_DIRECTORY: ${{github.workspace}}\output
- NUGET_SOURCE_URL: 'https://api.nuget.org/v3/index.json'
+ push:
+   tags: 
+    - 'v*'
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
-
+    env:
+      PROJECT_PATH: CSharpFancyExtensions/CSharpFancyExtensions.csproj
+      PACKAGE_OUTPUT_DIRECTORY: ${{github.workspace}}\output
+      NUGET_SOURCE_URL: https://api.nuget.org/v3/index.json
     steps:
     - uses: actions/checkout@v2
     - name: Setup .NET
@@ -25,6 +21,10 @@ jobs:
     - name: Restore dependencies
       run: dotnet restore
     - name: Build
-      run: dotnet build --no-restore
+      run: dotnet build --no-restore --configuration Release
     - name: Test
       run: dotnet test --no-build --verbosity normal
+    - name: Pack project
+      run: dotnet pack ${{env.PROJECT_PATH}} --no-restore --no-build --configuration Release --include-symbols --output $env.PACKAGE_OUTPUT_DIRECTORY
+    - name: Push package
+      run: dotnet nuget push ${{env.PACKAGE_OUTPUT_DIRECTORY}}\*.nupkg -k oy2azoetoip2sdct6qjqcl6ltlwtbljujn7il4fctesuge -s ${{env.NUGET_SOURCE_URL}}
