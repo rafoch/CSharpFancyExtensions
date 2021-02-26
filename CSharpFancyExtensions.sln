@@ -3,13 +3,18 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30711.63
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpFancyExtensions", "CSharpFancyExtensions\CSharpFancyExtensions.csproj", "{A8AED7FC-0B0C-4139-8768-5FC3F08DA672}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CSharpFancyExtensions", "CSharpFancyExtensions\CSharpFancyExtensions.csproj", "{A8AED7FC-0B0C-4139-8768-5FC3F08DA672}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpFancyExtensions.Common", "CSharpFancyExtensions.Common\CSharpFancyExtensions.Common.csproj", "{A65FC079-5899-40BE-80E3-995250080FCB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CSharpFancyExtensions.Common", "CSharpFancyExtensions.Common\CSharpFancyExtensions.Common.csproj", "{A65FC079-5899-40BE-80E3-995250080FCB}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{CAE67343-3076-4E3B-B26D-821734255BA7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpFancyExtensions.UnitTests", "CSharpFancyExtensions.UnitTests\CSharpFancyExtensions.UnitTests.csproj", "{132AE89F-20DE-4CCB-82F5-B479F250FDE3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CSharpFancyExtensions.UnitTests", "CSharpFancyExtensions.UnitTests\CSharpFancyExtensions.UnitTests.csproj", "{132AE89F-20DE-4CCB-82F5-B479F250FDE3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "workflows", "workflows", "{F7DA2599-182F-41BC-88F3-ECBCB1F58908}"
+	ProjectSection(SolutionItems) = preProject
+		nuget.yml = nuget.yml
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
