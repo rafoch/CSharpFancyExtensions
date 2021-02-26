@@ -1,0 +1,11 @@
+G:\Users\Carlton Leatch\source\repos\CSharpFancyExtensions\CSharpFancyExtensions.Common\bin\Debug\net5.0\CSharpFancyExtensions.Common.deps.json
+G:\Users\Carlton Leatch\source\repos\CSharpFancyExtensions\CSharpFancyExtensions.Common\bin\Debug\net5.0\CSharpFancyExtensions.Common.dll
+G:\Users\Carlton Leatch\source\repos\CSharpFancyExtensions\CSharpFancyExtensions.Common\bin\Debug\net5.0\ref\CSharpFancyExtensions.Common.dll
+G:\Users\Carlton Leatch\source\repos\CSharpFancyExtensions\CSharpFancyExtensions.Common\bin\Debug\net5.0\CSharpFancyExtensions.Common.pdb
+G:\Users\Carlton Leatch\source\repos\CSharpFancyExtensions\CSharpFancyExtensions.Common\obj\Debug\net5.0\CSharpFancyExtensions.Common.GeneratedMSBuildEditorConfig.editorconfig
+G:\Users\Carlton Leatch\source\repos\CSharpFancyExtensions\CSharpFancyExtensions.Common\obj\Debug\net5.0\CSharpFancyExtensions.Common.AssemblyInfoInputs.cache
+G:\Users\Carlton Leatch\source\repos\CSharpFancyExtensions\CSharpFancyExtensions.Common\obj\Debug\net5.0\CSharpFancyExtensions.Common.AssemblyInfo.cs
+G:\Users\Carlton Leatch\source\repos\CSharpFancyExtensions\CSharpFancyExtensions.Common\obj\Debug\net5.0\CSharpFancyExtensions.Common.csproj.CoreCompileInputs.cache
+G:\Users\Carlton Leatch\source\repos\CSharpFancyExtensions\CSharpFancyExtensions.Common\obj\Debug\net5.0\CSharpFancyExtensions.Common.dll
+G:\Users\Carlton Leatch\source\repos\CSharpFancyExtensions\CSharpFancyExtensions.Common\obj\Debug\net5.0\ref\CSharpFancyExtensions.Common.dll
+G:\Users\Carlton Leatch\source\repos\CSharpFancyExtensions\CSharpFancyExtensions.Common\obj\Debug\net5.0\CSharpFancyExtensions.Common.pdb

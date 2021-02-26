@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\Carlton Leatch\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\Carlton Leatch\\.nuget\\packages"
+    ]
+  }
+}
