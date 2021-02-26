@@ -1,9 +1,10 @@
-name: Deploy to nuget
+name: .NET
 
-on: 
+on:
   push:
-   tags: 
-    - 'v*'
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
 
 env:
  PROJECT_PATH: 'CSharpFancyExtensions/CSharpFancyExtensions.csproj'
@@ -11,17 +12,19 @@ env:
  NUGET_SOURCE_URL: 'https://api.nuget.org/v3/index.json'
 
 jobs:
-  deploy:
+  build:
+
     runs-on: ubuntu-latest
+
     steps:
     - uses: actions/checkout@v2
-    - name: Setup .NET Core
+    - name: Setup .NET
       uses: actions/setup-dotnet@v1
       with:
-        dotnet-version: '5.0.x'
-    - name: Install dependencies
+        dotnet-version: 5.0.x
+    - name: Restore dependencies
       run: dotnet restore
     - name: Build
-      run: dotnet build --configuration Release --no-restore
+      run: dotnet build --no-restore
     - name: Test
-      run: dotnet run --project NetLicensingClient-demo
+      run: dotnet test --no-build --verbosity normal
