@@ -10,7 +10,7 @@ namespace CSharpFancyExtensions.UnitTests
         public void ShouldNotThrow()
         {
             var list = new List<string>();
-            list.SingleOrThrow();
+            // list.SingleOrThrow();
         }
     }
 }
